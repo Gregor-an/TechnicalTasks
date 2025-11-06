@@ -1,0 +1,46 @@
+@host = http://localhost:5136
+
+# Valid login (replace <JWT> before running)
+POST {{host}}/api/login
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTc2MjQyMzYyNywiaXNzIjoidGVzdC1pc3N1ZXIiLCJhdWQiOiJ0ZXN0LWF1ZGllbmNlIn0.bwuliWPb47rXnPy_zjwVrANaRZYPFuTmnwuUVLRMWdeU_UDgOF8WgatmpK9TyI5Q_zLQjrViKWKBVNLV58cOusHkQrsCoIKEmyxDH7ymf6NJ1-jtrttHwXqRaPCoSzocqN_1aruHL6eT8rVuUyFQia4XbiB8ltj3JppSX0TzWPPHUmkX_2aT1rneHlVbmDro831hWdRluTqracim40Z0DfZjE9mxSyQvI_RogMXxwnvq-MZXSTFIPrKcqgLeCFRPF66NolSmyaakjFW243AWDqJjtSR7o-QPdvegsrzrTYK23giVL4T-oz0tqV3hTx4BgktXNTZflByVqJqaMAzSXw
+
+{
+  "username": "user1",
+  "password": "Password123"
+}
+
+###
+
+### Invalid password
+POST {{host}}/api/login
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTc2MjQyMzYyNywiaXNzIjoidGVzdC1pc3N1ZXIiLCJhdWQiOiJ0ZXN0LWF1ZGllbmNlIn0.bwuliWPb47rXnPy_zjwVrANaRZYPFuTmnwuUVLRMWdeU_UDgOF8WgatmpK9TyI5Q_zLQjrViKWKBVNLV58cOusHkQrsCoIKEmyxDH7ymf6NJ1-jtrttHwXqRaPCoSzocqN_1aruHL6eT8rVuUyFQia4XbiB8ltj3JppSX0TzWPPHUmkX_2aT1rneHlVbmDro831hWdRluTqracim40Z0DfZjE9mxSyQvI_RogMXxwnvq-MZXSTFIPrKcqgLeCFRPF66NolSmyaakjFW243AWDqJjtSR7o-QPdvegsrzrTYK23giVL4T-oz0tqV3hTx4BgktXNTZflByVqJqaMAzSXw
+
+{
+  "username": "user1",
+  "password": "WrongPassword"
+}
+
+###
+
+###  Missing token
+POST {{host}}/api/login
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "Password123"
+}
+
+###
+
+### Unknown user
+POST {{host}}/api/login
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTc2MjM5MTgzNiwiaXNzIjoidGVzdC1pc3N1ZXIiLCJhdWQiOiJ0ZXN0LWF1ZGllbmNlIn0.mtZU6fkzfJ-Vm9kW5WZj-m0B0HqMmHYpMMY2MUCXJmX2WAV2rVrxVrTu1ClLQ5ddKrhyU7cbbPOBpFAjjAXg0S42ADM4s7_xYCvtDU_OE5Dq6AIFyCvv9MXOJ0Un21QnkJbf_UXC9hjkksQoeOxUQxiJQRfT3Zophd9MGO9C0qDyVel0x4jsbgjPPj4mS818MyZ7Fj6F0AZrGXaO9GNkOroTRegZbvzj-5bKJCrNP87fqbtqoIPOyJtHypJf9mf95aPRJ9G4D9evgF4Zo_pGmi5l4eRx9kcikJq2nxj-IAMICNYmxVHg2BEYStVu77-2avLaeqbDdpptKYSbgYPRPw
+
+{
+  "username": "user_not_exist",
+  "password": "Password123"
+}

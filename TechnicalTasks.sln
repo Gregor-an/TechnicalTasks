@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonFileParserConsole", "JsonParserConsole\JsonFileParserConsole.csproj", "{37ED6535-1917-4574-828A-D4B053A3C6E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1", "Task1", "{E10B3390-502E-4315-B694-41EE8D405D2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task2", "Task2", "{752383B1-FB66-4B47-A3B0-0B74C6486A0D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonFileParserConsole.Tests", "JsonFileParserConsole.Tests\JsonFileParserConsole.Tests.csproj", "{0E3577B4-E079-4A30-AB8F-1FD461AE2ECE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginApi", "Task2.LoginApi\LoginApi.csproj", "{F321FC77-F622-438F-A22D-7343F353ECE1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenGenerator", "TokenGenerator\TokenGenerator.csproj", "{A1ED7F48-5C1E-43E9-8470-B51D2BF3E7C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37ED6535-1917-4574-828A-D4B053A3C6E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37ED6535-1917-4574-828A-D4B053A3C6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37ED6535-1917-4574-828A-D4B053A3C6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37ED6535-1917-4574-828A-D4B053A3C6E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E3577B4-E079-4A30-AB8F-1FD461AE2ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3577B4-E079-4A30-AB8F-1FD461AE2ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3577B4-E079-4A30-AB8F-1FD461AE2ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3577B4-E079-4A30-AB8F-1FD461AE2ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F321FC77-F622-438F-A22D-7343F353ECE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F321FC77-F622-438F-A22D-7343F353ECE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F321FC77-F622-438F-A22D-7343F353ECE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F321FC77-F622-438F-A22D-7343F353ECE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1ED7F48-5C1E-43E9-8470-B51D2BF3E7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1ED7F48-5C1E-43E9-8470-B51D2BF3E7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1ED7F48-5C1E-43E9-8470-B51D2BF3E7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1ED7F48-5C1E-43E9-8470-B51D2BF3E7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37ED6535-1917-4574-828A-D4B053A3C6E0} = {E10B3390-502E-4315-B694-41EE8D405D2E}
+		{0E3577B4-E079-4A30-AB8F-1FD461AE2ECE} = {E10B3390-502E-4315-B694-41EE8D405D2E}
+		{F321FC77-F622-438F-A22D-7343F353ECE1} = {752383B1-FB66-4B47-A3B0-0B74C6486A0D}
+		{A1ED7F48-5C1E-43E9-8470-B51D2BF3E7C8} = {752383B1-FB66-4B47-A3B0-0B74C6486A0D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72AB5DC5-C2A5-42DD-9F75-D902695C7A7B}
+	EndGlobalSection
+EndGlobal
